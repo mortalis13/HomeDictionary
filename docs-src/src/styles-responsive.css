@@ -1,0 +1,40 @@
+
+@media screen and (max-width: 1200px) {
+  .main-container {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .content .main-images .image-block {
+    display: block;
+  }
+  .content .main-images .image-block:first-child {
+    margin-right: 0px;
+  }
+  .main-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .bd-decor {
+    width: 50%;
+  }
+  .tutorial-content .tutorial-step {
+    margin-left: 0px;
+  }
+  .usage .usage-item {
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .menu {
+    font-size: 20px;
+  }
+  .menu .menu-item {
+    width: 80px;
+  }
+}

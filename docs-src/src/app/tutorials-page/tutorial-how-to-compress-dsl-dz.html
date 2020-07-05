@@ -1,0 +1,24 @@
+
+<div class="tutorial-content">
+  <div class="title"><a routerLink="/tutorials/how_to_compress_dsl_dz">How To Compress DSL to DSL.DZ</a></div>
+
+<p>Raw DSL files may occupy a lot of disk space depending on the number of translated articles and file encoding.</p>
+<p>It's useful to compress this type of files and to be able to access its content without unpacking the compressed archive.</p>
+<p><a href="https://linux.die.net/man/1/dictzip"><b>dictzip</b></a> tool is used for such a compression, it creates a <b>.dz</b> file and allows random access to the files inside it.</p>
+<br>
+<p>For <b>Windows</b> it can be downloaded as a binary executable from this repository: <a href="https://github.com/Tvangeste/dictzip-win32/releases">https://github.com/Tvangeste/dictzip-win32/releases</a>.</p>
+<p>Other implementations: <a href="https://github.com/dictzip">https://github.com/dictzip</a>.</p>
+<br>
+<p>To compress a DSL file use this command:</p>
+
+<br>
+<div class="code-example-separator"></div>
+<pre class="code-example">
+  dictzip -k some_dict.dsl
+</pre>
+<div class="code-example-separator"></div>
+<br>
+
+<p>It will create a file named <b>"some_dict.dsl.dz"</b>. It's an archive file which can be uncompressed with <b>7zip</b> program.</p>
+
+</div>

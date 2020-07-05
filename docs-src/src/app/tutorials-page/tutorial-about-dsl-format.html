@@ -1,0 +1,93 @@
+
+<div class="tutorial-content">
+  <div class="title"><a routerLink="/tutorials/about_dsl_format">About the DSL Dictionary Format</a></div>
+
+<p>The source text of a <b>DSL dictionary</b> is a plain text file saved with the <b>.dsl</b> extension.</p>
+<p>A dictionary structure includes the <b>header and dictionary entries</b>.</p>
+<p>The header contains the dictionary name, its translation direction (source - target languages) and other information.</p>
+<p>The entries are pairs of headwords and their translations composed using a special markup language.</p>
+<br>
+
+<p><b>An example structure:</b></p>
+
+<br>
+<div class="code-example-separator"></div>
+<pre class="code-example">
+  #NAME "Some Dictionary"
+  #INDEX_LANGUAGE "English"
+  #CONTENTS_LANGUAGE "German"
+
+  aggregate
+    [m1]1. (sich) anhäufen[/m]
+    [m1]vereinigen ([b]to[/b] mit)[/m]
+    [m1]sich belaufen auf ([p]Akk[/p])[/m]
+    [m1]2. (an)gehäuft[/m]
+    [m1]gesamt[/m]
+    [m1]3. Anhäufung [p]f[/p][/m]
+    [m1]Gesamtmenge [p]f[/p], Summe [p]f[/p][/m]
+    [m1]Aggregat [p]n[/p][/m]
+  therapy
+    [m1]Therapie [p]f[/p][/m]
+</pre>
+<div class="code-example-separator"></div>
+<br>
+
+<p>The tags are used inside the entry body to apply different styles to different parts of the text (indent paragraphs depending on their level, make text bold-italic, create links to other articles, change text color).</p>
+<br>
+
+<p>The following <b>DSL tags</b> are supported:</p>
+<table class="dsl-tags-table">
+<tr>
+  <td><code>[b]</code></td><td>bold</td>
+</tr>
+<tr>
+  <td><code>[i]</code></td><td>italics</td>
+</tr>
+<tr>
+  <td><code>[u]</code></td><td>underline</td>
+</tr>
+<tr>
+  <td><code>[c]</code></td><td>color</td>
+</tr>
+<tr>
+  <td><code>[mN]</code></td><td>paragraph of level N</td>
+</tr>
+<tr>
+  <td><code>[ex]</code></td><td>example</td>
+</tr>
+<tr>
+  <td><code>[com]</code></td><td>comment</td>
+</tr>
+<tr>
+  <td><code>[s]</code></td><td>multimedia (picture, sound)</td>
+</tr>
+<tr>
+  <td><code>[url]</code></td>
+  <td>web link</td>
+</tr>
+<tr>
+  <td><code>[p]</code></td><td>label</td>
+</tr>
+<tr>
+  <td><code>[ref]</code></td><td>link to another card</td>
+</tr>
+<tr>
+  <td><code>[sub]</code></td><td>subscript</td>
+</tr>
+<tr>
+  <td><code>[sup]</code></td><td>superscript</td>
+</tr>
+<tr>
+  <td><code>[*]</code></td><td>zone for the full translation mode (in Lingvo app)</td>
+</tr>
+</table>
+<br>
+
+<p>All tags are closed using the <b>[/TAG]</b> format, [m] paragraph tags are closed with <b>[/m]</b>.</p>
+<br>
+<p>DSL files are used directly by some applications (like <b>GoldenDict</b>) or need to be compiled into a compressed LSD format to be used in the <b>ABBYY Lingvo</b> application.</p>
+<br>
+<p>A more extended example of a DSL file: <a href="https://github.com/Tvangeste/SampleDSL/blob/master/sample.dsl">github.com/Tvangeste/SampleDSL/blob/master/sample.dsl</a>.</p>
+<p>More information about the DSL format and its compilation: <a href="http://lingvo.helpmax.net/en/troubleshooting/dsl-compiler">lingvo.helpmax.net/en/troubleshooting/dsl-compiler</a>.</p>
+
+</div>

@@ -1,0 +1,126 @@
+<div class="bd-decor"></div>
+<div class="info">
+  <p><b>Home Dictionary</b> is a dictionary shell application that allows to connect multiple external dictionary files for any language.</p>
+  <p>It supports <a href="http://lingvo.com" target="_blank"><b>Lingvo</b></a>&nbsp;<a href="http://lingvo.helpmax.net/en/troubleshooting/dsl-compiler/dsl-dictionary-structure" target="_blank"><b>DSL</b></a> dictionary format which is a plain text with special syntax markup that maps words/phrases to their translation articles.</p>
+  <p>The DSL text files can be compressed to <b>DSL.DZ</b> format to save disk space, using the <a href="https://linux.die.net/man/1/dictzip" target="_blank"><b>dictzip</b></a> compression tool. The application recognizes .DZ file format and reads dictionary contents from it.</p>
+</div>
+<div class="bd-decor"></div>
+
+<div class="main-images">
+  <div class="image-block">
+    <a href="assets/img/home-dictionary-1.png" target="_blank"><img src="assets/img/home-dictionary-1.png"></a>
+    <div class="image-desc">Search Results and List of Directions</div>
+  </div>
+  <div class="image-block">
+    <a href="assets/img/home-dictionary-2.png" target="_blank"><img src="assets/img/home-dictionary-2.png"></a>
+    <div class="image-desc">Article with Text Search</div>
+  </div>
+</div>
+
+<div class="features">
+  <div class="section-title">Features</div>
+  <ul>
+    <li>word search in multiple dictionary files on a selected translation direction</li>
+    <li>search of word translation to/from multiple languages/directions (e.g. <i>De->(*), (*)->En</i>)</li>
+    <li>change order of dictionaries in the found article</li>
+    <li>search history filtered by translation direction and ordered by searched word, direction, number of searches or search date</li>
+    <li>selectable main directory for dictionary files scanning</li>
+    <li>support for abbreviation dictionaries</li>
+  </ul>
+</div>
+
+<div class="usage">
+  <div class="section-title">Usage</div>
+  
+  <div class="usage-item scan-dictionaries">
+    <div class="section-subtitle">1. Scan Dictionaries</div>
+    <ul>
+      <li>put DSL or DSL.DZ files in a folder on your filesystem</li>
+      <li>open <b>Scan Dictionaries</b> panel and press <b>Scan</b></li>
+      <li>during the scanning the scanned number and total number of dictionaries will be shown</li>
+      <li>successfully scanned dictionaries will have green progress bar</li>
+      <li>if some dictionary files are incorrect the progress will be red and the number of <b>Errors</b> at the top will increment, you can select <b>Show Errors</b> in the menu to view list of dictionaries with error messages</li>
+      <li>you can skip some dictionaries during the scanning by selecting them or use <b>Activate/Deactivate All</b> menu to change scan status for all dictionaries</li>
+      <li>you can cancel scanning process, the scanned dictionaries until that moment will not be lost</li>
+      <li>during the scanning you can search words in dictionaries that you already have scanned previously, just swipe to the left to go to the main panel</li>
+      <li>the <b>Re-Scan</b> menu updates list of language pairs based on current contents of the main folder with dictionaries (used when dictionaries are deleted from the application or manually from the filesystem and the application should reflect the correct language list)</li>
+    </ul>
+  </div>
+  
+  <div class="usage-item word-search">
+    <div class="section-subtitle">2. Word Search</div>
+    <ul>
+      <li>select a translation pair from the list on the right</li>
+      <li>use the arrows button to switch languages, if it's enabled</li>
+      <li>pairs of type "lang->(*)" or "(*)->lang" allow to search translations from/to a selected language to/from all available languages</li>
+      <li>enter a word in the text field and select a result in the list below</li>
+      <li>max number of results can be selected in the <b>Settings</b>, higher values will require more time for the search process</li>
+      <li>use the search button/Enter on your soft keyboard to select the first result in the list</li>
+    </ul>
+  </div>
+  
+  <div class="usage-item article-navigation">
+    <div class="section-subtitle">3. Article Navigation</div>
+    <ul>
+      <li>article content is mainly styled based on the formatting tags of the DSL files</li>
+      <li>article zoom is smooth on older devices (versions 4.1.2+) and incremental on other (changes zoom level when zoom gesture is released), the zoom increment can be changed in the <b>Settings</b>, as well as default font size</li>
+      <li>to zoom with one finger doubleclick on the article content and move finger up or down</li>
+      <li>for large articles the scrollbar thumb can be used to navigate fast through the article content</li>
+      <li>the order of dictionaries in the article can be changed in the Edit Dictionaries menu</li>
+      <li>the Search Text menu is used to find a text inside the article content</li>
+      <li>some articles contain links (in green), clicking on them will load the corresponding articles</li>
+      <li>pressing the Back button on the device you go to the search list of the current word</li>
+      <li>clicking on the word text field will search for that word again and show the search result list</li>
+    </ul>
+  </div>
+  
+  <div class="usage-item edit-dictionaries">
+    <div class="section-subtitle">4. Edit Dictionaries</div>
+    <ul>
+      <li>to change the order of dictionaries in the article select them and use up/down arrows to move the items</li>
+      <li>use Delete button to remove dictionary from the search, it will not remove the corresponding physical file so you can scan it again</li>
+      <li>long press a dictionary to see its details</li>
+    </ul>
+  </div>
+  
+  <div class="usage-item search-history">
+    <div class="section-subtitle">5. Search History</div>
+    <ul>
+      <li>the history list shows the searched word, number of times the article was opened and the translation direction</li>
+      <li>clicking on a word will load an article for it</li>
+      <li>the list can be ordered by word text, search direction, number of hits and date/time</li>
+      <li>the direction selector includes all language pairs as in the main view and also has <b>"--All--"</b> item for all directions history</li>
+    </ul>
+  </div>
+  
+  <div class="usage-item abbreviation-dictionaries">
+    <div class="section-subtitle">6. Abbreviation Dictionaries</div>
+    <ul>
+      <li>these dictionaries use the same DSL format but should have <b>"_abrv"</b> at the end of the filename</li>
+      <li>they are rendered as tables of abbreviation-meaning pairs</li>
+      <li>scanned from the <b>Abbreviations</b> menu with the <b>Rescan</b> button</li>
+      <li>the Back toolbar button is used to return to the abbreviation dictionary list from the table view</li>
+    </ul>
+  </div>
+  
+  <div class="usage-item settings">
+    <div class="section-subtitle">7. Settings</div>
+    <ul>
+      <li>the <b>"Main Directory"</b> option allows to select a folder with dictionaries to scan</li>
+      <li>it's possible to switch between folders that previously were selected, it will load scanned dictionaries, order of dictionaries and search history, so it's not necessary to scan the dictionaries again if they were previously scanned</li>
+      <li>the <b>"Max Results"</b> limits maximum number of words searched and shown in the result list</li>
+      <li>the <b>"Include target=source"</b> is used to search words in the Explanatory types of dictionaries (where source language is the same as the target one), e.g. if you search a word in [en-de] direction the application will also search the [en-en] dictionaries if available</li>
+      <li>the <b>"Detect source language"</b> option changes the translation direction based on the first letter of the search word (if it's a latin letter, cyrillic, etc.)</li>
+      <li>the <b>"Article Font Size"</b> is for the default font size, it will be reset to this value when the article was zoomed</li>
+      <li>the <b>"Article Font Increment"</b> determines the value the font increases/decreases when article content is zoomed in/out</li>
+    </ul>
+  </div>
+</div>
+<!-- .usage -->
+
+<div class="notes">
+  <div class="section-title">Notes</div>
+  <ul>
+    <li>use of <b>external sdcard</b> is restricted to devices and Android versions that allow write access for that type of storage. For example, on devices with <b>Android KitKat (4.4)</b> external storage is read-only by default, to make it writable the device should be rooted, then you can use the <a href="https://play.google.com/store/apps/details?id=nextapp.sdfix" target="_blank"><b>SDFix: KitKat Writable MicroSD</b></a> application to fix the default permissions</li>
+  </ul>
+</div>
