@@ -29,7 +29,7 @@ Mobile dictionary shell application which allows to add multilanguage dictionary
 
 ## Versions
 
-**Demo version** can be found in the [**releases**](https://github.com/mortalis13/HomeDictionary-Android/releases/latest) section.
+**Demo version** can be found in the [**releases**](/releases/latest) section.
 
 ![Word Search](img/homedictionary-android-1_word_search.png)
 ![Article](img/homedictionary-android-2_article.png)
