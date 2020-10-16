@@ -27,7 +27,7 @@ import { routes } from './routes';
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes, {useHash: true})
+    RouterModule.forRoot(routes, {useHash: true, anchorScrolling: 'enabled'})
   ],
   providers: [],
   bootstrap: [AppComponent]
