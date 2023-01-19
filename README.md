@@ -4,9 +4,6 @@
 
 Mobile dictionary shell application which allows to add multilanguage dictionary files in Lingvo DSL format and search across added dictionaries in 1 or multiple language directions.
 
-If you'd like to make a donation via **PayPal** or with a **Credit Card**:  
-<a href="https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=4U6VKXLGU6LLU&source=url&locale.x=en_US"><img src="https://i.postimg.cc/2jXPm7TJ/btn-donate-2.png"></a>
-
 ## Features
 
 - read and index dictionaries in DSL format (or compressed DSL.DZ variation)
