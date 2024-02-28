@@ -1,6 +1,6 @@
 # Home Dictionary
 
-![Icon](img/icon.png)
+![Icon](_img/icon.png)
 
 Mobile dictionary shell application which allows to add multilanguage dictionary files in Lingvo DSL format and search across added dictionaries in 1 or multiple language directions.
 
@@ -27,13 +27,17 @@ Mobile dictionary shell application which allows to add multilanguage dictionary
 - "Abbreviations" menu shows a page with abbreviation dictionaries corresponding to the current language direction.
 - in Settings it's possible to select Max Results to limit number of words to search, change article font size and increment size (for Android Kitkat+ devices).
 
-## Versions
+## Download
 
-**Demo version** can be found in the [**releases**](https://github.com/mortalis13/HomeDictionary/releases/latest) section.
+Check [**releases**](https://github.com/mortalis13/HomeDictionary/releases/latest) section for the latest APK.
 
-![Word Search](img/homedictionary-android-1_word_search.png)
-![Article](img/homedictionary-android-2_article.png)
-![Settings](img/homedictionary-android-3_settings.png)
-![Dict Manager](img/homedictionary-android-4_dict_manager.png)
-![Dict Scanner](img/homedictionary-android-5_dict_scanner.png)
-![History](img/homedictionary-android-6_history.png)
+The app was previously accessible through Google Play, but according to their increased restrictions for app permissions it cannot be hosted there. The app asks for "All Files" permission to be able to manage custom dictionaries from any user selected directory. This justification wasn't enough for Google reviewers, so it won't implement any "tricks" to satisfy their requests.
+
+## Screenshots
+
+![Word Search](_img/homedictionary-android-1_word_search.png)
+![Article](_img/homedictionary-android-2_article.png)
+![Settings](_img/homedictionary-android-3_settings.png)
+![Dict Manager](_img/homedictionary-android-4_dict_manager.png)
+![Dict Scanner](_img/homedictionary-android-5_dict_scanner.png)
+![History](_img/homedictionary-android-6_history.png)

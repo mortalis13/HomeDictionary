@@ -154,25 +154,14 @@ a {
   margin-bottom: 30px;
 }
 
-.content .modules .module-title {
-  font-size: 20px;
-  font-weight: 700;
-  display: inline-block;
-  border-bottom: 2px solid #888;
+.content .modules .title {
   margin: 24px 0 10px;
 }
 .content .modules {
   padding-bottom: 40px;
   border-bottom: 1px solid #aaa;
 }
-.content .section-title {
-  font-size: 20px;
-  font-weight: 700;
-  display: inline-block;
-  border-bottom: 2px solid #888;
-  margin-bottom: 10px;
-}
-.content .section-subtitle {
+.content .subtitle {
   margin-bottom: 10px;
   font-weight: 700;
   color: #444;
@@ -189,7 +178,6 @@ a {
 /*-- tutorials --*/
 
 .tutorials {
-  margin-top: 10px;
   margin-bottom: 30px;
 }
 .tutorials .tutorial-link {
@@ -204,6 +192,9 @@ a {
   color: #1e5e7b;
 }
 
+.tutorial-content {
+  margin-bottom: 20px;
+}
 .tutorial-content a {
   color: #255163;
 }
@@ -212,12 +203,7 @@ a {
   color: #2d7391;
 }
 .tutorial-content .title {
-  font-size: 20px;
-  font-weight: 700;
-  margin-top: 10px;
-  margin-bottom: 30px;
-  color: #555;
-  text-decoration: underline;
+  margin-bottom: 20px !important;
 }
 .tutorial-content .title a {
   color: #555;
@@ -303,13 +289,13 @@ a {
 .content .title {
   font-size: 20px;
   font-weight: 700;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  color: #555;
-  text-decoration: underline;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #888;
+  display: inline-block;
 }
 .content .title a {
   color: #555;
+  text-decoration: none;
 }
 
 .links.content .link-category {
@@ -333,10 +319,4 @@ a {
 .links.content .link-add-text {
   color: #555;
   font-size: 16px;
-}
-
-.privacy-policy-content .title {
-  font-size: 30px;
-  margin-bottom: 10px;
-  font-weight: 700;
 }

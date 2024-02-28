@@ -31,10 +31,35 @@
 }
 
 @media screen and (max-width: 400px) {
+  .main-container {
+    font-size: 16px;
+  }
+  .header .title {
+    font-size: 26px;
+  }
+  .content .title {
+    font-size: 18px;
+  }
   .menu {
     font-size: 20px;
+    display: flex;
+  }
+  .content .main-images .image-block .image-desc {
+    font-size: 14px;
+  }
+  .links.content .link-add-text {
+    font-size: 14px;
   }
   .menu .menu-item {
-    width: 80px;
+    flex: 1;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .menu {
+    display: block;
+  }
+  .menu .menu-item {
+    width: 100%;
   }
 }
