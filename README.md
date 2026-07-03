@@ -1,6 +1,6 @@
 # Home Dictionary
 
-![Icon](_img/icon.png)
+<img width="68" alt="icon" src="https://github.com/user-attachments/assets/6b0a85c7-a203-45e5-b767-935c63a4581b" />
 
 Mobile dictionary shell application which allows to add multilanguage dictionary files in Lingvo DSL format and search across added dictionaries in 1 or multiple language directions.
 
@@ -35,9 +35,8 @@ The app was previously accessible through Google Play, but according to their in
 
 ## Screenshots
 
-![Word Search](_img/homedictionary-android-1_word_search.png)
-![Article](_img/homedictionary-android-2_article.png)
-![Settings](_img/homedictionary-android-3_settings.png)
-![Dict Manager](_img/homedictionary-android-4_dict_manager.png)
-![Dict Scanner](_img/homedictionary-android-5_dict_scanner.png)
-![History](_img/homedictionary-android-6_history.png)
+<img width="180" alt="homedictionary-01-word-list" src="https://github.com/user-attachments/assets/e961f146-4881-40a4-b7dc-d78f8fe9acb5" />
+<img width="180" alt="homedictionary-02-article" src="https://github.com/user-attachments/assets/50b19a90-8a48-4b7a-ae31-695c1acdcdd3" />
+<img width="180" alt="homedictionary-03-dictionary-manager" src="https://github.com/user-attachments/assets/c99e2ada-183f-45c7-a4c1-59d99385dec6" />
+<img width="180" alt="homedictionary-04-scanner" src="https://github.com/user-attachments/assets/4a759cf3-ffbd-45d6-8fef-6f26ef368c71" />
+<img width="180" alt="homedictionary-05-word-history" src="https://github.com/user-attachments/assets/b8d9c148-9f8e-44f3-a4ae-0abaa0a59c26" />
